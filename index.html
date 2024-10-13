@@ -1,0 +1,68 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Vite App</title>
+    <style>
+      #miLista li {
+        cursor: pointer;
+      }
+      input:disabled {
+      background-color: #f0f0f0; /* Color de fondo cuando está deshabilitado */
+      cursor: not-allowed; /* Cambia el cursor a not-allowed */
+    }
+
+    /* Estilo opcional para el hover en el input */
+    input {
+      transition: background-color 0.3s;
+    }
+    </style>
+  </head>
+  <body>
+    <h1> Mi primer curso Javascript </h1>
+    <div id="app"></div>
+      <div>
+        <div>
+          <h2>Cambio de color</h2>
+          <p class="textos">Este es el primer parrafo</p>
+          <p class="textos">Este es el segundo parrafo</p>
+          <p class="textos">Este es el tercer parrafo</p>
+        <button id = "cambiarColor">Cambiar color</button>
+        </div>
+        <div>
+          <h2>Alerta</h2>
+          <form id="miFormulario">
+            <label for="textoInput">Ingresa un texto:</label>
+            <input type="text" id="textoInput">
+            <button type="button" id="alertButton">Mostrar Alerta</button>
+          </form>
+        </div>  
+        <div>
+          <h2>Lista para interactuar</h2>
+          <ul id="miLista">
+            <li>Elemento 1</li>
+            <li>Elemento 2</li>
+            <li>Elemento 3</li>
+            <li>Elemento 4</li>
+          </ul>
+        </div>
+        <div>
+          <h2>Campo deshabilitado</h2>
+         <input type="text" id="miInput" placeholder="Escribe algo aquí...">
+          <button id="deshabilitarBtn">Deshabilitar campo</button>
+          <button id="habilitarBtn">Habilitar campo</button>
+        </div>
+        <div>
+          <h2>Email form</h2>
+          <form id="miFormulario">
+            <input type="email" id="emailInput" placeholder="Ingresa tu correo electrónico" required>
+            <button type="submit">Guardar Correo</button>
+          </form>
+          <div id="correoGuardado"></div>
+          <button id="eliminarBtn" style="display: none;">Eliminar Correo</button>
+        </div>
+    <script type="module" src="/main.js"></script>
+  </body>
+</html>
